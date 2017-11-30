@@ -9,9 +9,15 @@ alongside me.
 
 ## Steps
 
-1. Feature definition
+#### 1. Feature definition
 
 Let's just define what the system should do in a feature file : `account_management.feature`.  
 In IntelliJ, with the Cucumber plugin active, you can run it directly by right-clicking the **Feature** keyword.
 
-1.1. We add some more scenarios / examples
+##### 1.1. We add some more scenarios / examples
+
+#### 2. Implement business code and glue
+
+I create business objects to resolve the feature. Those objects should remain pretty simple, in order to only fulfill
+what is defined by the feature file.  
+Of course, best practices in code design should be applied nevertheless.
