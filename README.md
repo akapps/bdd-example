@@ -21,3 +21,9 @@ In IntelliJ, with the Cucumber plugin active, you can run it directly by right-c
 I create business objects to resolve the feature. Those objects should remain pretty simple, in order to only fulfill
 what is defined by the feature file.  
 Of course, best practices in code design should be applied nevertheless.
+
+#### 3. Add a Cucumber launcher
+
+Until now, the feature could be run using IntelliJ but not by standard build tools (Maven, Gradle).  
+In this step I define a Cucumber feature(s) launcher. Such a class will be the entry-point for (here) JUnit to run
+the feature's examples as tests.
