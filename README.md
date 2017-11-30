@@ -13,3 +13,5 @@ alongside me.
 
 Let's just define what the system should do in a feature file : `account_management.feature`.  
 In IntelliJ, with the Cucumber plugin active, you can run it directly by right-clicking the **Feature** keyword.
+
+1.1. We add some more scenarios / examples
