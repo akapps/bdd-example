@@ -1,9 +1,11 @@
 package ch.antaes.kapps.demo.bdd.glue;
 
 import ch.antaes.kapps.demo.bdd.test.AbstractAccountManipulation;
+import ch.antaes.kapps.demo.bdd.test.base.BusinessTestBase;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,9 +14,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  * 
  * @author Antoine Kapps
  */
-public class AccountCalculationSteps {
+public class AccountCalculationSteps extends BusinessTestBase {
 
-    private AbstractAccountManipulation testLayer = new BusinessAccountManipulation();
+    @Autowired
+    private AbstractAccountManipulation testLayer;
 
 
     @Given("^I have \\$(\\d+) on my account$")

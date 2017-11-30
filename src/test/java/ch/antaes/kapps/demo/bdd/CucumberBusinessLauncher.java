@@ -1,4 +1,4 @@
-package ch.antaes.kapps.demo.bdd.glue;
+package ch.antaes.kapps.demo.bdd;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty", "html:build/cucumber", "json:build/cucumber/api/results.json"},
+        plugin = {"pretty", "html:build/cucumber/domain", "json:build/cucumber/domain/api/results.json"},
         glue = "classpath:ch/antaes/kapps/demo/bdd/glue",
         features = "classpath:features/"
 )
-public class CucumberLauncher {
+public class CucumberBusinessLauncher {
 }

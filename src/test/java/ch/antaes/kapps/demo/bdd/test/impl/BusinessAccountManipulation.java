@@ -1,6 +1,7 @@
-package ch.antaes.kapps.demo.bdd.glue;
+package ch.antaes.kapps.demo.bdd.test.impl;
 
 import ch.antaes.kapps.demo.bdd.domain.Account;
+import ch.antaes.kapps.demo.bdd.glue.Fixtures;
 import ch.antaes.kapps.demo.bdd.test.AbstractAccountManipulation;
 
 /**
